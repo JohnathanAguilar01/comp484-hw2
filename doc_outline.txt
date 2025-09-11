@@ -1,3 +1,5 @@
+structure.html outline:
+
 1.Comp 484<body><h1>
     1.1.Structuring Pages<h2>
     1.2.Navigation<nav>
@@ -6,3 +8,26 @@
         1.3.2.Document outlines <section><h3>
             1.3.2.1.W3C Warning<aside><h4>
         1.3.3.WAI-ARIA Roles<section><h3>
+
+How structural elements are being used:
+
+<header role="banner">
+Contains the site identity as h1 “Comp 484” and page label as H2 “Structuring Pages”, plus the site navigation(<nav>). This works as the banner with navigation area at the top of the page.
+
+<nav role="navigation"> (inside header/banner)
+Holds a list of global links to index, syntax, structure, links, reference, and next. It’s the navigation between pages.
+
+<main role="main">
+Encapsulates the primary content of the page and contains the article section with several other sub-sections. It properly separates the central content from the header/navigation and footer.
+
+<article>
+Wraps a self-contained unit of content about the topic “Structuring Pages.” It has its own internal header with an H3 "Conveying meaning through structure" and a introductory paragraph, followed by several thematic section blocks each containg sub points.
+
+<section> (used three times)
+section off several sub-topics of page Structuring such as “Sectioning elements,” “Document outlines,” and “WAI-ARIA Roles.” Each has an H3 heading identifying what each section is about.
+
+<aside role="complementary"> (inside the “Document outlines” section)
+Provides supplementary content(“W3C Warning”) that supports but isn’t essential to the main narrative.
+
+<footer role="contentinfo">
+Contains site/contact details such as CSUN address and website link. It serves as the global footer.
